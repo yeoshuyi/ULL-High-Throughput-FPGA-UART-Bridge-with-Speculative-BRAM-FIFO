@@ -1,12 +1,12 @@
 # ULL High-Throughput FPGA-UART Bridge with Speculative BRAM FIFO
 
 _Design Specifications_
-FPGA Board:     Arty-S7
-UART Baud Rate: 6,000,000Baud
-UART Protocol:  8P1 (1bit Start, 1bit Stop)
-Clock Rate:     Use 100MHz On-board CLK to synthesis 288MHz CLK with MMCM
-Sampling Rate:  16x Oversample
-FIFO Buffer:    BRAM with 4096Addr, 3 Pointer Speculative Write with Rollback, FWFT with CDC
+1) FPGA Board:     Arty-S7
+2) UART Baud Rate: 6,000,000Baud
+3) UART Protocol:  8P1 (1bit Start, 1bit Stop)
+4) Clock Rate:     Use 100MHz On-board CLK to synthesis 288MHz CLK with MMCM
+5) Sampling Rate:  16x Oversample
+6) FIFO Buffer:    BRAM with 4096Addr, 3 Pointer Speculative Write with Rollback, FWFT with CDC
 
 _Low Latency Optimization_
 1) Double-edge detection to cut down 2FF input buffer to 1.5ticks delay
